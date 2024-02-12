@@ -1,0 +1,161 @@
+2023-12-14 16:26:52.183 +05:30 [INF] Now listening on: http://localhost:5093
+2023-12-14 16:26:52.223 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-14 16:26:52.225 +05:30 [INF] Hosting environment: Development
+2023-12-14 16:26:52.226 +05:30 [INF] Content root path: D:\Task5(webapiCrudoperationsdbfirstservicelayer)log
+2023-12-14 16:26:52.810 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/index.html - -
+2023-12-14 16:26:53.084 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5093/_vs/browserLink - -
+2023-12-14 16:26:53.090 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5093/_framework/aspnetcore-browser-refresh.js - -
+2023-12-14 16:26:53.111 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/index.html - - - 200 - text/html;charset=utf-8 298.5758ms
+2023-12-14 16:26:53.112 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5093/_framework/aspnetcore-browser-refresh.js - - - 200 12062 application/javascript;+charset=utf-8 23.6425ms
+2023-12-14 16:26:53.154 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5093/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 69.4766ms
+2023-12-14 16:26:53.208 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/v1/swagger.json - -
+2023-12-14 16:26:53.347 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 139.4207ms
+2023-12-14 16:27:04.124 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5093/api/Product/2345678567890 - -
+2023-12-14 16:27:04.138 +05:30 [INF] Executing endpoint 'Task5_webapiCrudoperationsdbfirstservicelayer_.Controllers.ProductController.GetProductById (Task5(webapiCrudoperationsdbfirstservicelayer))'
+2023-12-14 16:27:04.158 +05:30 [INF] Route matched with {action = "GetProductById", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProductById(Int32) on controller Task5_webapiCrudoperationsdbfirstservicelayer_.Controllers.ProductController (Task5(webapiCrudoperationsdbfirstservicelayer)).
+2023-12-14 16:27:04.168 +05:30 [INF] Executed action Task5_webapiCrudoperationsdbfirstservicelayer_.Controllers.ProductController.GetProductById (Task5(webapiCrudoperationsdbfirstservicelayer)) in 3.893ms
+2023-12-14 16:27:04.173 +05:30 [INF] Executed endpoint 'Task5_webapiCrudoperationsdbfirstservicelayer_.Controllers.ProductController.GetProductById (Task5(webapiCrudoperationsdbfirstservicelayer))'
+2023-12-14 16:27:04.178 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Task5_webapiCrudoperationsdbfirstservicelayer_.ServiceLayer.IProductService' while attempting to activate 'Task5_webapiCrudoperationsdbfirstservicelayer_.Controllers.ProductController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method3(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-12-14 16:27:04.208 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5093/api/Product/2345678567890 - - - 500 - text/plain;+charset=utf-8 84.7059ms
+2023-12-14 16:29:55.807 +05:30 [INF] Now listening on: http://localhost:5093
+2023-12-14 16:29:55.857 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-14 16:29:55.859 +05:30 [INF] Hosting environment: Development
+2023-12-14 16:29:55.859 +05:30 [INF] Content root path: D:\Task5(webapiCrudoperationsdbfirstservicelayer)log
+2023-12-14 16:29:56.237 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/index.html - -
+2023-12-14 16:29:56.560 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5093/_framework/aspnetcore-browser-refresh.js - -
+2023-12-14 16:29:56.560 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5093/_vs/browserLink - -
+2023-12-14 16:29:56.576 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/index.html - - - 200 - text/html;charset=utf-8 330.1898ms
+2023-12-14 16:29:56.576 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5093/_framework/aspnetcore-browser-refresh.js - - - 200 12062 application/javascript;+charset=utf-8 16.1548ms
+2023-12-14 16:29:56.606 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5093/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 45.5655ms
+2023-12-14 16:29:56.650 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/v1/swagger.json - -
+2023-12-14 16:29:56.799 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 148.8700ms
+2023-12-14 16:30:05.886 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5093/api/Product/6899 - -
+2023-12-14 16:30:05.893 +05:30 [INF] Executing endpoint 'Task5_webapiCrudoperationsdbfirstservicelayer_.Controllers.ProductController.GetProductById (Task5(webapiCrudoperationsdbfirstservicelayer))'
+2023-12-14 16:30:05.937 +05:30 [INF] Route matched with {action = "GetProductById", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProductById(Int32) on controller Task5_webapiCrudoperationsdbfirstservicelayer_.Controllers.ProductController (Task5(webapiCrudoperationsdbfirstservicelayer)).
+2023-12-14 16:30:05.945 +05:30 [INF] Executed action Task5_webapiCrudoperationsdbfirstservicelayer_.Controllers.ProductController.GetProductById (Task5(webapiCrudoperationsdbfirstservicelayer)) in 2.1287ms
+2023-12-14 16:30:05.950 +05:30 [INF] Executed endpoint 'Task5_webapiCrudoperationsdbfirstservicelayer_.Controllers.ProductController.GetProductById (Task5(webapiCrudoperationsdbfirstservicelayer))'
+2023-12-14 16:30:05.992 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Task5_webapiCrudoperationsdbfirstservicelayer_.ServiceLayer.IProductService' while attempting to activate 'Task5_webapiCrudoperationsdbfirstservicelayer_.Controllers.ProductController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method3(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-12-14 16:30:06.018 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5093/api/Product/6899 - - - 500 - text/plain;+charset=utf-8 132.2802ms
+2023-12-14 16:31:27.791 +05:30 [INF] Now listening on: http://localhost:5093
+2023-12-14 16:31:27.834 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-14 16:31:27.839 +05:30 [INF] Hosting environment: Development
+2023-12-14 16:31:27.840 +05:30 [INF] Content root path: D:\Task5(webapiCrudoperationsdbfirstservicelayer)log
+2023-12-14 16:31:28.451 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/index.html - -
+2023-12-14 16:31:28.694 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5093/_vs/browserLink - -
+2023-12-14 16:31:28.697 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5093/_framework/aspnetcore-browser-refresh.js - -
+2023-12-14 16:31:28.709 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/index.html - - - 200 - text/html;charset=utf-8 259.2718ms
+2023-12-14 16:31:28.717 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5093/_framework/aspnetcore-browser-refresh.js - - - 200 12062 application/javascript;+charset=utf-8 19.7348ms
+2023-12-14 16:31:28.752 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5093/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 58.1228ms
+2023-12-14 16:31:28.838 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/v1/swagger.json - -
+2023-12-14 16:31:28.935 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 96.4992ms
+2023-12-14 16:31:36.487 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5093/api/Product/90 - -
+2023-12-14 16:31:37.776 +05:30 [INF] Executing endpoint 'Task5_webapiCrudoperationsdbfirstservicelayer_.Controllers.ProductController.GetProductById (Task5(webapiCrudoperationsdbfirstservicelayer))'
+2023-12-14 16:31:37.797 +05:30 [INF] Route matched with {action = "GetProductById", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProductById(Int32) on controller Task5_webapiCrudoperationsdbfirstservicelayer_.Controllers.ProductController (Task5(webapiCrudoperationsdbfirstservicelayer)).
+2023-12-14 16:31:38.182 +05:30 [INF] Executed action Task5_webapiCrudoperationsdbfirstservicelayer_.Controllers.ProductController.GetProductById (Task5(webapiCrudoperationsdbfirstservicelayer)) in 84.6188ms
+2023-12-14 16:31:38.220 +05:30 [INF] Executed endpoint 'Task5_webapiCrudoperationsdbfirstservicelayer_.Controllers.ProductController.GetProductById (Task5(webapiCrudoperationsdbfirstservicelayer))'
+2023-12-14 16:31:38.273 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Task5_webapiCrudoperationsdbfirstservicelayer_.ServiceLayer.IProductService' while attempting to activate 'Task5_webapiCrudoperationsdbfirstservicelayer_.Controllers.ProductController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method3(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-12-14 16:31:38.300 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5093/api/Product/90 - - - 500 - text/plain;+charset=utf-8 1812.5192ms
+2023-12-14 16:33:24.426 +05:30 [INF] Now listening on: http://localhost:5093
+2023-12-14 16:33:24.450 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-14 16:33:24.452 +05:30 [INF] Hosting environment: Development
+2023-12-14 16:33:24.453 +05:30 [INF] Content root path: D:\Task5(webapiCrudoperationsdbfirstservicelayer)log
+2023-12-14 16:33:24.914 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/index.html - -
+2023-12-14 16:33:25.141 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5093/_framework/aspnetcore-browser-refresh.js - -
+2023-12-14 16:33:25.142 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5093/_vs/browserLink - -
+2023-12-14 16:33:25.157 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/index.html - - - 200 - text/html;charset=utf-8 234.0406ms
+2023-12-14 16:33:25.157 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5093/_framework/aspnetcore-browser-refresh.js - - - 200 12062 application/javascript;+charset=utf-8 10.7849ms
+2023-12-14 16:33:25.189 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5093/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 47.0246ms
+2023-12-14 16:33:25.242 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/v1/swagger.json - -
+2023-12-14 16:33:25.328 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 86.1729ms
+2023-12-14 16:33:32.328 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5093/api/Product/567890 - -
+2023-12-14 16:33:32.338 +05:30 [INF] Executing endpoint 'Task5_webapiCrudoperationsdbfirstservicelayer_.Controllers.ProductController.GetProductById (Task5(webapiCrudoperationsdbfirstservicelayer))'
+2023-12-14 16:33:32.401 +05:30 [INF] Route matched with {action = "GetProductById", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProductById(Int32) on controller Task5_webapiCrudoperationsdbfirstservicelayer_.Controllers.ProductController (Task5(webapiCrudoperationsdbfirstservicelayer)).
+2023-12-14 16:33:40.541 +05:30 [INF] Executed DbCommand (52ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[Name], [p].[Price], [p].[Quantity]
+FROM [Product] AS [p]
+WHERE [p].[Id] = @__p_0
+2023-12-14 16:33:46.269 +05:30 [ERR] An error occurred while processing the request.
+System.Exception: Exception of type 'System.Exception' was thrown.
+   at Task5_webapiCrudoperationsdbfirstservicelayer_.Controllers.ProductController.GetProductById(Int32 id) in D:\Task5(webapiCrudoperationsdbfirstservicelayer)log\Controllers\ProductController.cs:line 37
+2023-12-14 16:33:47.651 +05:30 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-12-14 16:33:47.673 +05:30 [INF] Executed action Task5_webapiCrudoperationsdbfirstservicelayer_.Controllers.ProductController.GetProductById (Task5(webapiCrudoperationsdbfirstservicelayer)) in 15265.8004ms
+2023-12-14 16:33:47.800 +05:30 [INF] Executed endpoint 'Task5_webapiCrudoperationsdbfirstservicelayer_.Controllers.ProductController.GetProductById (Task5(webapiCrudoperationsdbfirstservicelayer))'
+2023-12-14 16:33:47.902 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5093/api/Product/567890 - - - 500 - text/plain;+charset=utf-8 15574.0871ms
+2023-12-14 16:36:44.420 +05:30 [INF] Now listening on: http://localhost:5093
+2023-12-14 16:36:44.470 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-14 16:36:44.474 +05:30 [INF] Hosting environment: Development
+2023-12-14 16:36:44.475 +05:30 [INF] Content root path: D:\Task5(webapiCrudoperationsdbfirstservicelayer)log
+2023-12-14 16:36:45.080 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/index.html - -
+2023-12-14 16:36:45.434 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5093/_framework/aspnetcore-browser-refresh.js - -
+2023-12-14 16:36:45.434 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5093/_vs/browserLink - -
+2023-12-14 16:36:45.464 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/index.html - - - 200 - text/html;charset=utf-8 378.4406ms
+2023-12-14 16:36:45.464 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5093/_framework/aspnetcore-browser-refresh.js - - - 200 12062 application/javascript;+charset=utf-8 6.3599ms
+2023-12-14 16:36:45.499 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5093/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 64.9546ms
+2023-12-14 16:36:45.583 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/v1/swagger.json - -
+2023-12-14 16:36:45.794 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 210.8307ms
+2023-12-14 16:36:53.162 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5093/api/Product/4567890 - -
+2023-12-14 16:36:53.188 +05:30 [INF] Executing endpoint 'Task5_webapiCrudoperationsdbfirstservicelayer_.Controllers.ProductController.GetProductById (Task5(webapiCrudoperationsdbfirstservicelayer))'
+2023-12-14 16:36:53.230 +05:30 [INF] Route matched with {action = "GetProductById", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProductById(Int32) on controller Task5_webapiCrudoperationsdbfirstservicelayer_.Controllers.ProductController (Task5(webapiCrudoperationsdbfirstservicelayer)).
+2023-12-14 16:37:00.762 +05:30 [INF] Executed DbCommand (41ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[Name], [p].[Price], [p].[Quantity]
+FROM [Product] AS [p]
+WHERE [p].[Id] = @__p_0
+2023-12-14 16:37:00.937 +05:30 [ERR] An error occurred while processing the request.
+System.Exception: Exception of type 'System.Exception' was thrown.
+   at Task5_webapiCrudoperationsdbfirstservicelayer_.Controllers.ProductController.GetProductById(Int32 id) in D:\Task5(webapiCrudoperationsdbfirstservicelayer)log\Controllers\ProductController.cs:line 37
+2023-12-14 16:37:05.385 +05:30 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-12-14 16:37:05.394 +05:30 [INF] Executed action Task5_webapiCrudoperationsdbfirstservicelayer_.Controllers.ProductController.GetProductById (Task5(webapiCrudoperationsdbfirstservicelayer)) in 12156.0524ms
+2023-12-14 16:37:05.397 +05:30 [INF] Executed endpoint 'Task5_webapiCrudoperationsdbfirstservicelayer_.Controllers.ProductController.GetProductById (Task5(webapiCrudoperationsdbfirstservicelayer))'
+2023-12-14 16:37:05.405 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5093/api/Product/4567890 - - - 500 - text/plain;+charset=utf-8 12243.6343ms
+2023-12-14 16:38:32.290 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5093/ - -
+2023-12-14 16:38:32.296 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5093/ - - - 404 0 - 6.0710ms
+2023-12-14 16:38:34.287 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5093/ - -
+2023-12-14 16:38:34.336 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5093/ - - - 404 0 - 49.0398ms
